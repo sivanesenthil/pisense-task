@@ -1,0 +1,34 @@
+.Main {
+	padding: 64px;
+	flex: 1;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	overflow: auto;
+	gap: 56px;
+	justify-items: center;
+}
+
+.logo {
+	display: flex;
+	height: 5rem;
+	font-weight: bold;
+	font-size: 22px;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+	height: 4%;
+}
+
+.logo > img {
+	width: 3rem;
+	height: 3rem;
+}
+
+.attendance-chart {
+	grid-column: span 2;
+}
+
+.homework-chart,
+.behaviour-chart {
+	height: 300px;
+}

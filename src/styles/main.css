@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 32px;
+	transition: all 300ms ease;
+	height: 72px;
+	border-bottom: 2px solid #aaa;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.text {
+	color: var(--textColor);
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.text > span {
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	color: var(--textColor);
+	cursor: pointer;
+}
+
+:root {
+	--mainColor: #29335c;
+	--mainColorLight: #5767aa;
+	--secondaryColor: grey;
+	--textColor: #eee;
+}
+
+.bar {
+	margin-top: 4rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	color: var(--textColor);
+}
+
+.barItem {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-left: 2rem;
+	height: 4.5rem;
+	position: relative;
+	transition: all 280ms ease;
+	font-size: 14px;
+	border: 0.7rem;
+}
+
+.barItem:hover {
+	background: var(--mainColorLight);
+	cursor: pointer;
+}
+
+.active {
+	margin-left: 0;
+}
+
+.active::before {
+	content: "";
+	width: 8px;
+	height: 100%;
+	background: var(--mainColor);
+	margin-right: calc(1rem - 8px);
+}
